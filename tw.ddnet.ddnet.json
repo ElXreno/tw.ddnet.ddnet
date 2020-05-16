@@ -27,6 +27,9 @@
             "config-opts": [
                 "-DAUTOUPDATE=OFF"
             ],
+            "post-install": [
+                "mv /app/share/metainfo/ddnet.appdata.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml"
+            ],
             "sources": [
                 {
                     "type": "git",
