@@ -53,8 +53,8 @@
                     "name": "libnotify",
                     "buildsystem": "meson",
                     "config-opts": [
-                        "-D=man=false",
-                        "-D=gtk_doc=false"
+                        "-Dman=false",
+                        "-Dgtk_doc=false"
                     ],
                     "sources": [
                         {
