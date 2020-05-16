@@ -17,6 +17,9 @@
     "rename-desktop-file": "ddnet.desktop",
     "rename-icon": "ddnet",
     "cleanup": [
+        "/include",
+        "/lib/girepository-1.0",
+        "/lib/pkgconfig",
         "/share/gir-1.0"
     ],
     "modules": [
