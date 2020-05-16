@@ -14,6 +14,11 @@
         "--talk-name=org.freedesktop.Notifications",
         "--device=dri"
     ],
+    "rename-desktop-file": "ddnet.desktop",
+    "rename-icon": "ddnet",
+    "cleanup": [
+        "/share/gir-1.0"
+    ],
     "modules": [
         {
             "name": "ddnet",
@@ -28,6 +33,10 @@
                     "url": "https://github.com/ddnet/ddnet.git",
                     "tag": "13.1",
                     "commit": "a723299cb98dcecb0ba356851c1888211f781039"
+                },
+                {
+                    "type": "patch",
+                    "path": "ddnet-set-data-dir.patch"
                 }
             ],
             "modules": [
@@ -37,7 +46,8 @@
                     "name": "libnotify",
                     "buildsystem": "meson",
                     "config-opts": [
-                        "-D=man=false"
+                        "-D=man=false",
+                        "-D=gtk_doc=false"
                     ],
                     "sources": [
                         {
