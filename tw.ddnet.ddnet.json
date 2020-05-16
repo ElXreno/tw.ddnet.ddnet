@@ -16,6 +16,7 @@
     ],
     "rename-desktop-file": "ddnet.desktop",
     "rename-icon": "ddnet",
+    "rename-appdata-file": "ddnet.appdata.xml"
     "cleanup": [
         "/bin/DDNet-Server",
         "/include",
@@ -30,9 +31,6 @@
             "builddir": true,
             "config-opts": [
                 "-DAUTOUPDATE=OFF"
-            ],
-            "post-install": [
-                "mv /app/share/metainfo/ddnet.appdata.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml"
             ],
             "sources": [
                 {
