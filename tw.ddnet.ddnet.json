@@ -42,6 +42,10 @@
                 {
                     "type": "patch",
                     "path": "ddnet-set-data-dir.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "ddnet-improve-appstream.patch"
                 }
             ],
             "modules": [
