@@ -16,7 +16,7 @@
     ],
     "rename-desktop-file": "ddnet.desktop",
     "rename-icon": "ddnet",
-    "rename-appdata-file": "ddnet.appdata.xml"
+    "rename-appdata-file": "ddnet.appdata.xml",
     "cleanup": [
         "/bin/DDNet-Server",
         "/include",
